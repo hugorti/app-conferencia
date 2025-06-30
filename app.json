@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Labotrat Conf.",
-    "slug": "Labotrat Conf.",
+    "name": "Labotrat Conf",
+    "slug": "labotrat-conf",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/caixa.png",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/caixa.png",
         "backgroundColor": "#865BA6"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.taskseat.labotratconf"
     },
     "web": {
       "bundler": "metro",
@@ -24,19 +25,24 @@
       "favicon": "./assets/images/caixa.png"
     },
     "plugins": [
-  "expo-router",
-  [
-    "expo-splash-screen",
-    {
-      "image": "./assets/images/caixa.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#865BA6"
-    }
-  ]
-],
-
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/caixa.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#865BA6"
+        }
+      ]
+    ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "56bcd44d-d22a-468b-8b6a-8dbbca7cf289"
+      }
     }
   }
 }

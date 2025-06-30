@@ -29,8 +29,18 @@ export default function HomeScreen() {
     }
   }, [currentNumber]);
 
-  const handleAddNumber = useCallback(() => {
+    const handleAddNumber = useCallback(() => {
     if (currentNumber.length !== 7) return;
+    
+    const numericValue = parseInt(currentNumber, 10);
+    
+    // Verifica se o número começa acima de 1699999
+    if (numericValue > 1699999) {
+      Alert.alert('Volume inválido!', 'Bipe apenas a etiqueta laranja.');
+      setCurrentNumber('');
+      inputRef.current?.focus();
+      return;
+    }
     
     if (numbers.includes(currentNumber)) {
       Alert.alert('Número repetido', 'Este número já foi digitado anteriormente.');
@@ -405,7 +415,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     marginBottom: 8,
-    fontSize: 16,
+    fontSize: 22,
     fontWeight: 'bold',
   },
   missingTitle: {
@@ -418,7 +428,7 @@ const styles = StyleSheet.create({
   },
   numberItem: {
     padding: 8,
-    fontSize: 14,
+    fontSize: 24,
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
   },

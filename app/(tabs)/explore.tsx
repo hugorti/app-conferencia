@@ -17,19 +17,21 @@ export default function TabTwoScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Desenvolvido por: Hugo Rodrigues</ThemedText>
+        <ThemedText type="subtitle">Desenvolvido por: Hugo Rodrigues</ThemedText>
       </ThemedView>
 
       <ThemedText type="defaultSemiBold" style={styles.sectionTitle}>
         Funcionalidades:
       </ThemedText>
       <ThemedText>• Bipar caixa a caixa</ThemedText>
-      <ThemedText>• Saber os volumes bipados</ThemedText>
+      <ThemedText>• Saber a qtd total de volumes</ThemedText>
       <ThemedText>• Verificar os volumes faltantes</ThemedText>
+      <ThemedText>• Verificar os volumes bipados</ThemedText>
 
       <ThemedText type="defaultSemiBold" style={styles.sectionTitle}>
         Regras:
       </ThemedText>
+      <ThemedText>• Permite bipar apenas a etiqueta laranja</ThemedText>
       <ThemedText>• Conferente só pode bipar uma caixa uma única vez</ThemedText>
       <ThemedText>• Não é permitido bipar a mesma caixa duas vezes</ThemedText>
       <ThemedText>• Volumes faltantes acima de 2000 não são permitidos</ThemedText>
@@ -52,6 +54,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     marginTop: 16,
+    fontWeight: 'bold',
     marginBottom: 8,
   },
 });
