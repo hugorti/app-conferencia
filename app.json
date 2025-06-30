@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "conferencia",
-    "slug": "conferencia",
+    "name": "Labotrat Conf.",
+    "slug": "Labotrat Conf.",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "conferencia",
+    "icon": "./assets/images/caixa.png",
+    "scheme": "Labotrat Conf.",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,28 +13,28 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/caixa.png",
+        "backgroundColor": "#865BA6"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/caixa.png"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
+  "expo-router",
+  [
+    "expo-splash-screen",
+    {
+      "image": "./assets/images/caixa.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#865BA6"
+    }
+  ]
+],
+
     "experiments": {
       "typedRoutes": true
     }

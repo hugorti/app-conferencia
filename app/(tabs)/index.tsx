@@ -145,7 +145,7 @@ export default function HomeScreen() {
       {/* Cabeçalho fixo */}
       <View style={styles.header}>
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/caixa.png')}
           style={styles.reactLogo}
         />
       </View>
@@ -324,7 +324,7 @@ const styles = StyleSheet.create({
   },
   header: {
     height: 200,
-    backgroundColor: '#A1CEDC',
+    backgroundColor: '#865BA6',
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
@@ -338,7 +338,8 @@ const styles = StyleSheet.create({
   reactLogo: {
     height: 178,
     width: 290,
-    marginBottom: 20,
+     bottom: 0,
+    left: -95,
   },
   inputContainer: {
     flexDirection: 'row',
