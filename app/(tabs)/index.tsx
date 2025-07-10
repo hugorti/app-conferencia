@@ -245,28 +245,11 @@ export default function HomeScreen() {
                   </ThemedText>
                 )}
 
-                {/* Números Conferidos */}
-                <ThemedView style={styles.sectionContainer}>
-                  <ThemedText type="subtitle" style={styles.sectionTitle}>
-                    Números Conferidos ({sortedNumbers.length})
-                  </ThemedText>
-                  <View style={styles.numbersContainer}>
-                    {sortedNumbers.map((num, index) => (
-                      <ThemedText 
-                        key={index} 
-                        style={styles.numberItem}
-                      >
-                        {num.toString().padStart(7, '0')}
-                      </ThemedText>
-                    ))}
-                  </View>
-                </ThemedView>
-
-                {/* Números Faltantes */}
+                 {/* Números Faltantes */}
                 {missingNumbers.length > 0 && (
                   <ThemedView style={styles.sectionContainer}>
                     <ThemedText type="subtitle" style={[styles.sectionTitle, styles.missingTitle]}>
-                      Números Faltantes ({missingNumbers.length})
+                      Volumes Faltantes ({missingNumbers.length})
                     </ThemedText>
                     <View style={styles.numbersContainer}>
                       {missingNumbers.map((num, index) => (
@@ -280,6 +263,25 @@ export default function HomeScreen() {
                     </View>
                   </ThemedView>
                 )}
+
+                {/* Números Conferidos */}
+                <ThemedView style={styles.sectionContainer}>
+                  <ThemedText type="subtitle" style={styles.sectionTitle}>
+                    Volumes Conferidos ({sortedNumbers.length})
+                  </ThemedText>
+                  <View style={styles.numbersContainer}>
+                    {sortedNumbers.map((num, index) => (
+                      <ThemedText 
+                        key={index} 
+                        style={styles.numberItem}
+                      >
+                        {num.toString().padStart(7, '0')}
+                      </ThemedText>
+                    ))}
+                  </View>
+                </ThemedView>
+
+               
               </>
             )}
           </View>
